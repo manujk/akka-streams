@@ -1,8 +1,10 @@
+package basics
+
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl.{Flow, Sink, Source}
 
-object HelloWorld extends App{
+object HelloWorld extends App {
 
   implicit val system = ActorSystem("system")
   implicit val materializer = ActorMaterializer()

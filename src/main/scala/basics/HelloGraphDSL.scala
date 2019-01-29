@@ -1,6 +1,8 @@
+package basics
+
 import akka.actor.ActorSystem
-import akka.stream.{ActorMaterializer, ClosedShape}
 import akka.stream.scaladsl.{Flow, GraphDSL, RunnableGraph, Sink, Source}
+import akka.stream.{ActorMaterializer, ClosedShape}
 
 object HelloGraphDSL extends App {
 
