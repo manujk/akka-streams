@@ -9,7 +9,7 @@ object HelloWorld extends App {
   implicit val system = ActorSystem("system")
   implicit val materializer = ActorMaterializer()
 
-  val source = Source(1 to 100)
+  val source = Source(1 to 10)
   val multiplier = Flow[Int].map(_ * 2)
   val sink = Sink.foreach[Int](s => println(s"[output] => $s"))
 
